@@ -24,7 +24,7 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testAddFigure() {
         //given
-        ShapeCollector shapeCollector = new ShapeCollector(new Circle(4));
+        ShapeCollector shapeCollector = new ShapeCollector();
         //when
         shapeCollector.addFigure(new Circle(4));
         //then
@@ -33,7 +33,7 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testRemoveFigure() {
         //given
-        ShapeCollector shapeCollector = new ShapeCollector(new Circle(2));
+        ShapeCollector shapeCollector = new ShapeCollector();
         Circle circle = new Circle(2);
         shapeCollector.addFigure(circle);
         //when
@@ -45,7 +45,7 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testGetFigure() {
         //given
-        ShapeCollector shapeCollector = new ShapeCollector(new Circle(2));
+        ShapeCollector shapeCollector = new ShapeCollector();
         Circle circle = new Circle(2);
         shapeCollector.addFigure(circle);
         //when
@@ -57,7 +57,7 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testRemoveFigureNotExisting() {
         //given
-        ShapeCollector shapeCollector = new ShapeCollector(new Circle(2));
+        ShapeCollector shapeCollector = new ShapeCollector();
         Circle circle = new Circle(2);
         //when
         boolean result = shapeCollector.removeFigure(circle);

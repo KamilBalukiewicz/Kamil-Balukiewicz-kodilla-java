@@ -3,15 +3,10 @@ package com.kodilla.testing.shape;
 import java.util.ArrayList;
 
 public class ShapeCollector {
-    private Shape shape;
+
     private ArrayList<Shape> shapes = new ArrayList<Shape>();
 
-    public ShapeCollector(Shape shape) {
-        this.shape = shape;
-    }
-
     public void addFigure(Shape shape) {
-        ShapeCollector shapeCollector = new ShapeCollector(shape);
         shapes.add(shape);
     }
 
@@ -42,9 +37,5 @@ public class ShapeCollector {
     }
     public int getFiguresQuantity() {
         return shapes.size();
-    }
-
-    public Shape getShape() {
-        return shape;
     }
 }
