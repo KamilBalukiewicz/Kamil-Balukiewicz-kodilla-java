@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-05-19T21:28:58" hostname="Gareth-Komputer" time="0.733">
+  <properties/>
+  <testcase name="testCalculateAdvStatisticsWhen0comments" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.723"/>
+  <testcase name="testCalculateAdvStatisticsWhenMoreCommentsThanPostsAnd100users" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatisticsWhen0posts" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.003"/>
+  <testcase name="testCalculateAdvStatisticsWhen0users" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatisticsWhen1000postsAndMorePostsThanComments" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.002"/>
+  <system-out><![CDATA[This is the beginning of tests.
+Preparing to execute test #1
+Number of users: 1000
+Number of posts: 10
+Number of comments: 0
+Average posts per user: 0.01
+Average comments per user: 0.0
+Average comments per post: 0.0
+Preparing to execute test #2
+Number of users: 100
+Number of posts: 10
+Number of comments: 100
+Average posts per user: 0.1
+Average comments per user: 1.0
+Average comments per post: 10.0
+Preparing to execute test #3
+Number of users: 1000
+Number of posts: 0
+Number of comments: 100
+Average posts per user: 0.0
+Average comments per user: 0.1
+Average comments per post: 0.0
+Preparing to execute test #4
+Number of users: 0
+Number of posts: 100
+Number of comments: 100
+Average posts per user: 0.0
+Average comments per user: 0.0
+Average comments per post: 1.0
+Preparing to execute test #5
+Number of users: 1000
+Number of posts: 1000
+Number of comments: 100
+Average posts per user: 1.0
+Average comments per user: 0.1
+Average comments per post: 0.1
+All tests are finished.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
