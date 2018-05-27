@@ -4,10 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.time.LocalDate;
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 import static java.util.stream.Collectors.toList;
@@ -148,12 +146,12 @@ public class BoardTestSuite {
         //when
         List<TaskList> inProgress = new ArrayList<>();
         inProgress.add(new TaskList("In progress"));
-        long sumOfDays = project.getTaskLists().stream()
+        double sumOfDays = project.getTaskLists().stream()
                 .filter(inProgress::contains)
                 .flatMap(t1 -> t1.getTasks().stream())
-                .mapToLong(t -> Period.between(t.getCreated(), t.getDeadline()).getDays())
+                .mapToLong(t ->DAYS.between(t.getCreated(), t.getDeadline()))
                 .sum();
-                //.reduce(0, (sum, current) -> sum = sum.add(current));
+
 
 
         List<Task> numberOfTasks = project.getTaskLists().stream()
@@ -163,9 +161,9 @@ public class BoardTestSuite {
 
         //then
         double average = sumOfDays / numberOfTasks.size();
-        Assert.assertEquals(55, sumOfDays);
+        Assert.assertEquals(55.0, sumOfDays,0);
         Assert.assertEquals(3, numberOfTasks.size());
-        Assert.assertEquals(18.333, average, 0.01);
+        Assert.assertEquals(18.333, average, 0.001);
 
     }
 
