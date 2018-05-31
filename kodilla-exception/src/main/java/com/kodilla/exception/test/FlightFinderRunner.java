@@ -11,7 +11,7 @@ public class FlightFinderRunner {
         FlightFinder flightFinder = new FlightFinder();
 
         try {
-            flightFinder.findFlight(flight);
+            flightFinder.findFlight(flight2);
         } catch (RouteNotFoundException e) {
             System.out.println("Sorry. You can't go there");
         } finally {
