@@ -9,8 +9,13 @@ public class GlutenFreeShop implements OrderProcess {
         this.order = order;
     }
 
+    public Order getOrder() {
+        return order;
+    }
+
     public String getProducerName() {
         return producerName;
+
     }
     public PlacedOrder process(Order order) {
         if(order.getQuantityOfProduce() > 0) {

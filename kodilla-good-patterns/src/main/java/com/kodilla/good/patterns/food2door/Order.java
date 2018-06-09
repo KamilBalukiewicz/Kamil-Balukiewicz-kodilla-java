@@ -16,4 +16,12 @@ public class Order {
     public String getNameOfProduce() {
         return nameOfProduce;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "quantityOfProduce=" + quantityOfProduce +
+                ", nameOfProduce='" + nameOfProduce + '\'' +
+                '}';
+    }
 }

@@ -13,6 +13,10 @@ public class ExtraFoodShop implements OrderProcess {
         return producerName;
     }
 
+    public Order getOrder() {
+        return order;
+    }
+
     public PlacedOrder process(Order order) {
         if(order.getQuantityOfProduce() > 0) {
             return new PlacedOrder(producerName, order);
