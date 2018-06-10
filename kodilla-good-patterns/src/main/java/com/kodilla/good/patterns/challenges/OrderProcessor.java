@@ -15,7 +15,7 @@ public class OrderProcessor {
 
     public OrderDto process(final OrderRequest orderRequest) {
         boolean isOrdered = orderService.order(orderRequest.getUser(), orderRequest.getWhen());
-        if(isOrdered) {
+        if (isOrdered) {
             informationService.inform(orderRequest.getUser());
             orderRepository.createOrder(orderRequest.getUser(), orderRequest.getWhen());
             return new OrderDto(orderRequest.getUser(), true);

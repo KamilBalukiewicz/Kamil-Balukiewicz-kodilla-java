@@ -9,11 +9,11 @@ public class User {
         this.surname = surname;
     }
 
-     public String getName() {
+    public String getName() {
         return name;
-     }
+    }
 
-     public String getSurname() {
+    public String getSurname() {
         return surname;
-     }
+    }
 }

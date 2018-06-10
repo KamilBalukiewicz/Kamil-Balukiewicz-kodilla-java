@@ -5,11 +5,10 @@ public class FirstChallenge {
         double result = 0;
         try {
             result = a / b;
-            if(b == 0)
+            if (b == 0)
                 throw new ArithmeticException();
-        }
-        catch (ArithmeticException e){
-                System.out.println("Something went wrong! Error: " + e);
+        } catch (ArithmeticException e) {
+            System.out.println("Something went wrong! Error: " + e);
         } finally {
             System.out.println("Remember not to divide by 0!");
         }
@@ -19,6 +18,7 @@ public class FirstChallenge {
 
     /**
      * This main can throw an ArithmeticException!!!
+     *
      * @param args
      */
     public static void main(String[] args) {

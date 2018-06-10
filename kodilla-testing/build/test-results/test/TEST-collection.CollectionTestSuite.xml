@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="collection.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-05-19T21:28:58" hostname="Gareth-Komputer" time="0.023">
-  <properties/>
-  <testcase name="testOddNumbersExterminatorEmptyList" classname="collection.CollectionTestSuite" time="0.021"/>
-  <testcase name="testOddNumbersExterminatorNormalList" classname="collection.CollectionTestSuite" time="0.001"/>
-  <system-out><![CDATA[Test suite: begin
+<testsuite name="collection.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0"
+           timestamp="2018-05-19T21:28:58" hostname="Gareth-Komputer" time="0.023">
+    <properties/>
+    <testcase name="testOddNumbersExterminatorEmptyList" classname="collection.CollectionTestSuite" time="0.021"/>
+    <testcase name="testOddNumbersExterminatorNormalList" classname="collection.CollectionTestSuite" time="0.001"/>
+    <system-out><![CDATA[Test suite: begin
 Test case: begin
 Testing Empty List
 Not odd numbers (0): []
@@ -14,5 +15,5 @@ Not odd numbers (6): [2, 4, 6, 14, 16, 24]
 Test case: end
 Test suit: end
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+    <system-err><![CDATA[]]></system-err>
 </testsuite>

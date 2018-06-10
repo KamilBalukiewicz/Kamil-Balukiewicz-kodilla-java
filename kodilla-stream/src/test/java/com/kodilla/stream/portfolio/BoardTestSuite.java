@@ -149,9 +149,8 @@ public class BoardTestSuite {
         double sumOfDays = project.getTaskLists().stream()
                 .filter(inProgress::contains)
                 .flatMap(t1 -> t1.getTasks().stream())
-                .mapToLong(t ->DAYS.between(t.getCreated(), t.getDeadline()))
+                .mapToLong(t -> DAYS.between(t.getCreated(), t.getDeadline()))
                 .sum();
-
 
 
         List<Task> numberOfTasks = project.getTaskLists().stream()
@@ -161,7 +160,7 @@ public class BoardTestSuite {
 
         //then
         double average = sumOfDays / numberOfTasks.size();
-        Assert.assertEquals(55.0, sumOfDays,0);
+        Assert.assertEquals(55.0, sumOfDays, 0);
         Assert.assertEquals(3, numberOfTasks.size());
         Assert.assertEquals(18.333, average, 0.001);
 

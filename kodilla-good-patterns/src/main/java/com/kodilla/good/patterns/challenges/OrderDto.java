@@ -9,11 +9,11 @@ public class OrderDto {
         this.isOrdered = isOrdered;
     }
 
-     public User getUser() {
+    public User getUser() {
         return user;
-     }
+    }
 
-     public boolean isOrdered(){
+    public boolean isOrdered() {
         return isOrdered;
-      }
+    }
 }

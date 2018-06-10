@@ -17,7 +17,7 @@ public class FlightFinder {
         }
         if (flights.containsKey(flight.getArrivalAirport()) && flights.containsKey(flight.getDepartureAirport())) {
             boolean value = flights.get(flight.getArrivalAirport());
-            if(value) {
+            if (value) {
                 System.out.println("Flight from " + flight.getDepartureAirport() +
                         " to " + flight.getArrivalAirport() + " is possible");
             } else {

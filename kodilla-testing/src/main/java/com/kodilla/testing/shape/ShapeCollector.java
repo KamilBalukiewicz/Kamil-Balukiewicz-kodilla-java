@@ -26,15 +26,17 @@ public class ShapeCollector {
         }
         return figure;
     }
+
     public void showFigures() {
-        if(shapes.size() > 0) {
+        if (shapes.size() > 0) {
             for (Shape figure : shapes) {
                 System.out.println(figure);
             }
-        }else {
+        } else {
             System.out.println("Collection is empty");
         }
     }
+
     public int getFiguresQuantity() {
         return shapes.size();
     }

@@ -21,7 +21,7 @@ public final class ForumUser {
     }
 
     public boolean removeFriend(ForumUser user) {
-       return friends.remove(user);
+        return friends.remove(user);
     }
 
     public Set<String> getLocationsOfFriends() {

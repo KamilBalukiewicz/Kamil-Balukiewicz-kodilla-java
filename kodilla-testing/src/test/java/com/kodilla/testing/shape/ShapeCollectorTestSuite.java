@@ -30,6 +30,7 @@ public class ShapeCollectorTestSuite {
         //then
         Assert.assertEquals(1, shapeCollector.getFiguresQuantity());
     }
+
     @Test
     public void testRemoveFigure() {
         //given
@@ -42,6 +43,7 @@ public class ShapeCollectorTestSuite {
         Assert.assertTrue(result);
         Assert.assertEquals(0, shapeCollector.getFiguresQuantity());
     }
+
     @Test
     public void testGetFigure() {
         //given
@@ -54,6 +56,7 @@ public class ShapeCollectorTestSuite {
         //then
         Assert.assertEquals(circle, retrievedShape);
     }
+
     @Test
     public void testRemoveFigureNotExisting() {
         //given

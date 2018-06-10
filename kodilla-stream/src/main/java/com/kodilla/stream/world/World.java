@@ -14,6 +14,7 @@ public final class World {
     public boolean removeContinent(Continent continent) {
         return continents.remove(continent);
     }
+
     public BigDecimal getPeopleQuantity() {
         return continents.stream()
                 .flatMap(country -> country.getCountries().stream())

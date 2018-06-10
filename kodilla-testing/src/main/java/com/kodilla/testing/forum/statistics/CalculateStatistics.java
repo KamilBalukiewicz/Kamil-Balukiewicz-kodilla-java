@@ -9,25 +9,26 @@ public class CalculateStatistics {
     private double averageCommentsPerUser;
     private double averageCommentsPerPost;
 
-    public CalculateStatistics (Statistics statistics) {
+    public CalculateStatistics(Statistics statistics) {
         this.statistics = statistics;
     }
+
     public double calculateAdvStatistics(Statistics statistics) {
 
         numberOfUsers = statistics.usersNames().size();
         numberOfPosts = statistics.postsCount();
         numberOfComments = statistics.commentsCount();
-        if(numberOfUsers > 0) {
-        averagePostsPerUser = numberOfPosts / (double) numberOfUsers;
+        if (numberOfUsers > 0) {
+            averagePostsPerUser = numberOfPosts / (double) numberOfUsers;
         } else {
             averagePostsPerUser = 0;
         }
-        if(numberOfUsers > 0) {
+        if (numberOfUsers > 0) {
             averageCommentsPerUser = numberOfComments / (double) numberOfUsers;
         } else {
             averageCommentsPerUser = 0;
         }
-        if(numberOfPosts > 0) {
+        if (numberOfPosts > 0) {
             averageCommentsPerPost = numberOfComments / (double) numberOfPosts;
         } else {
             averageCommentsPerPost = 0;

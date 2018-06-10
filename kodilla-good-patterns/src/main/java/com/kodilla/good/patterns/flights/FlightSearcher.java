@@ -9,7 +9,7 @@ public final class FlightSearcher {
     public static void searchByDepartureCity(String departureCity) {
         FlightsList flightsList = new FlightsList();
 
-        List<Flight> flightsFrom =  flightsList.getTheFlightList().stream()
+        List<Flight> flightsFrom = flightsList.getTheFlightList().stream()
                 .filter(f -> f.getDepartureCity().equals(departureCity))
                 .collect(toList());
 

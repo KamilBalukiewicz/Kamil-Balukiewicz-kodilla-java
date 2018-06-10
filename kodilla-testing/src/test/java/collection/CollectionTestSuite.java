@@ -1,6 +1,8 @@
 package collection;
+
 import com.kodilla.testing.collection.OddNumbersExterminator;
 import org.junit.*;
+
 import java.util.ArrayList;
 
 public class CollectionTestSuite {
@@ -8,18 +10,22 @@ public class CollectionTestSuite {
     public void before() {
         System.out.println("Test case: begin");
     }
+
     @After
     public void after() {
         System.out.println("Test case: end");
     }
+
     @BeforeClass
     public static void beforeClass() {
         System.out.println("Test suite: begin");
     }
+
     @AfterClass
     public static void afterClass() {
         System.out.println("Test suit: end");
     }
+
     @Test
     public void testOddNumbersExterminatorEmptyList() {
         //given
@@ -32,6 +38,7 @@ public class CollectionTestSuite {
         //then
         Assert.assertEquals(properList, resultList);
     }
+
     @Test
     public void testOddNumbersExterminatorNormalList() {
         //given

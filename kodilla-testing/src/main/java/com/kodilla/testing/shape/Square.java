@@ -7,10 +7,12 @@ public class Square implements Shape {
     public Square(double l) {
         this.l = l;
     }
+
     @Override
     public double getArea() {
         return l * l;
     }
+
     @Override
     public String getShapeName() {
         return "square";

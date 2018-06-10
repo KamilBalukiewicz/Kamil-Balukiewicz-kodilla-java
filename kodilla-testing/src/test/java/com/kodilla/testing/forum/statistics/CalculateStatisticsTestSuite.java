@@ -51,6 +51,7 @@ public class CalculateStatisticsTestSuite {
         assertEquals(0, calculateStatistics.getAverageCommentsPerPost(), 0.001);
         calculateStatistics.showStatistics();
     }
+
     @Test
     public void testCalculateAdvStatisticsWhen1000postsAndMorePostsThanComments() {
         //given
@@ -72,6 +73,7 @@ public class CalculateStatisticsTestSuite {
         assertEquals(0.1, calculateStatistics.getAverageCommentsPerPost(), 0.001);
         calculateStatistics.showStatistics();
     }
+
     @Test
     public void testCalculateAdvStatisticsWhen0comments() {
         //given
@@ -93,6 +95,7 @@ public class CalculateStatisticsTestSuite {
         assertEquals(0, calculateStatistics.getAverageCommentsPerPost(), 0.001);
         calculateStatistics.showStatistics();
     }
+
     @Test
     public void testCalculateAdvStatisticsWhenMoreCommentsThanPostsAnd100users() {
         //given
@@ -114,6 +117,7 @@ public class CalculateStatisticsTestSuite {
         assertEquals(10, calculateStatistics.getAverageCommentsPerPost(), 0.001);
         calculateStatistics.showStatistics();
     }
+
     @Test
     public void testCalculateAdvStatisticsWhen0users() {
         //given
