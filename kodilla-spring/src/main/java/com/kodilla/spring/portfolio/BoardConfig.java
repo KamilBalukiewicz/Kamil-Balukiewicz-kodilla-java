@@ -8,9 +8,18 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class BoardConfig {
+
     @Autowired
     @Qualifier("toDoList")
-    TaskList taskList;
+    private TaskList toDoList;
+
+    @Autowired
+    @Qualifier("inProgressList")
+    private TaskList inProgressList;
+
+    @Autowired
+    @Qualifier("doneList")
+    private TaskList doneList;
 
     @Bean(name = "toDoList")
     @Scope("prototype")
@@ -30,10 +39,9 @@ public class BoardConfig {
         return new TaskList();
     }
 
-
     @Bean
     public Board board() {
-        return new Board(getToDoList(), getInProgressList(), getDoneList());
+        return new Board(toDoList, inProgressList, doneList);
     }
 
 
