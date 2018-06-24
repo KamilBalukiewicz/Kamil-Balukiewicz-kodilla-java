@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.world.WorldTestSuite" tests="1" skipped="0" failures="0" errors="0"
-           timestamp="2018-05-27T17:06:47" hostname="Gareth-Komputer" time="0.005">
-    <properties/>
-    <testcase name="testGetPeopleQuantity" classname="com.kodilla.stream.world.WorldTestSuite" time="0.005"/>
-    <system-out><![CDATA[]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+<testsuite name="com.kodilla.stream.world.WorldTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-22T22:06:04" hostname="Gareth-Komputer" time="0.004">
+  <properties/>
+  <testcase name="testGetPeopleQuantity" classname="com.kodilla.stream.world.WorldTestSuite" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

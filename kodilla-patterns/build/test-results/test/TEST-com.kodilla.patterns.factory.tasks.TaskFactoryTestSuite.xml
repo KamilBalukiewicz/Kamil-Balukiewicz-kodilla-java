@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-22T22:05:18" hostname="Gareth-Komputer" time="0.006">
+  <properties/>
+  <testcase name="testFactoryPainting" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.002"/>
+  <testcase name="testFactoryDriving" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.001"/>
+  <testcase name="testFactoryShopping" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.001"/>
+  <system-out><![CDATA[Executing task Paint the house
+Painting wall pink
+Executing task Driving Miss Daisy
+Driving Lincoln to London
+Executing task: Food shopping
+Shopping for 20.0 Potatoes
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

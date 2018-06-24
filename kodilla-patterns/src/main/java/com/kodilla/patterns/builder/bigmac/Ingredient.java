@@ -26,4 +26,9 @@ public class Ingredient {
     public String getExtraIngredient() {
         return extraIngredient;
     }
+
+    @Override
+    public String toString() {
+        return  extraIngredient;
+    }
 }

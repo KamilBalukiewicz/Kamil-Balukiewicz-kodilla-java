@@ -8,14 +8,14 @@ public class BigmacTestSuite {
     public void testBigmacBuilder() {
         //given
         Bigmac bigmac = new Bigmac.BigmacBuilder()
-                .bun("plain")
+                .bun(new Bun(Bun.PLAIN))
                 .burgers(2)
-                .sauce("barbecue")
-                .ingredient("cheese")
-                .ingredient("lettuce")
-                .ingredient("bacon")
-                .ingredient("onion")
-                .ingredient("pickle")
+                .sauce(new Sauce(Sauce.BARBECUE))
+                .ingredient(new Ingredient(Ingredient.CHEESE))
+                .ingredient(new Ingredient(Ingredient.LETTUCE))
+                .ingredient(new Ingredient(Ingredient.BACON))
+                .ingredient(new Ingredient(Ingredient.ONION))
+                .ingredient(new Ingredient(Ingredient.PICKLE))
                 .build();
         System.out.println(bigmac);
         //when
@@ -23,9 +23,10 @@ public class BigmacTestSuite {
 
         //then
         Assert.assertEquals(5, howManyIngredients);
-        Assert.assertEquals("barbecue", bigmac.getSauce());
+        Assert.assertEquals("BARBECUE", bigmac.getSauce().getSauceType());
         Assert.assertEquals(2, bigmac.getBurgers());
-        Assert.assertEquals("plain", bigmac.getBun());
-        Assert.assertNotEquals("chillies", bigmac.getIngredients());
+        Assert.assertEquals("PLAIN", bigmac.getBun().getBunType());
+        Assert.assertEquals("ONION", bigmac.getIngredients().get(3).toString());
+        Assert.assertNotEquals("CHILLIES", bigmac.getIngredients());
     }
 }

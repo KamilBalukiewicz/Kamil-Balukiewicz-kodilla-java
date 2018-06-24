@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.forum.ForumUserTestSuite" tests="2" skipped="0" failures="0" errors="0"
-           timestamp="2018-05-27T17:06:46" hostname="Gareth-Komputer" time="0.019">
-    <properties/>
-    <testcase name="testGetLocationsOfFriends" classname="com.kodilla.stream.forum.ForumUserTestSuite" time="0.014"/>
-    <testcase name="testGetLocationsOfFriendsOfFriends" classname="com.kodilla.stream.forum.ForumUserTestSuite"
-              time="0.004"/>
-    <system-out><![CDATA[]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+<testsuite name="com.kodilla.stream.forum.ForumUserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-06-22T22:06:04" hostname="Gareth-Komputer" time="0.034">
+  <properties/>
+  <testcase name="testGetLocationsOfFriends" classname="com.kodilla.stream.forum.ForumUserTestSuite" time="0.03"/>
+  <testcase name="testGetLocationsOfFriendsOfFriends" classname="com.kodilla.stream.forum.ForumUserTestSuite" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
