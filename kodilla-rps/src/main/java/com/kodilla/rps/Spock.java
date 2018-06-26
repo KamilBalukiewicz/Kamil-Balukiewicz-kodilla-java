@@ -1,15 +1,16 @@
-/*package com.kodilla.rps;
+package com.kodilla.rps;
 
 public class Spock implements Shape {
     @Override
-    public String getShapeName() {
+    public String choose() {
+        System.out.println("This is Spock");
         return "Spock";
     }
 
-    @Override
+    /*@Override
     public void getLosingShape() {
         if (shape == scissors || shape == rock) {
             System.out.println("Spock wins");
         }
-    }
-}*/
+    }*/
+}

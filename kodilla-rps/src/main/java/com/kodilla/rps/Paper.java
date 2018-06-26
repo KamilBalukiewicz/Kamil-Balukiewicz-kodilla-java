@@ -1,14 +1,15 @@
-/*package com.kodilla.rps;
+package com.kodilla.rps;
 
 public class Paper implements Shape {
     @Override
-    public String getShapeName() {
+    public String choose() {
+        System.out.println("This is paper");
         return "Paper";
     }
-    @Override
+    /*@Override
     public void getLosingShape() {
         if(shape == rock || shape == spock) {
             System.out.println("Paper wins");
         }
-    }
-}*/
+    }*/
+}
