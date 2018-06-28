@@ -1,4 +1,4 @@
-package com.kodilla.rps;
+/*package com.kodilla.rps;
 
 public class Display {
     final Shape shape;
@@ -10,4 +10,4 @@ public class Display {
     public String show() {
         return shape.choose();
     }
-}
+}*/
