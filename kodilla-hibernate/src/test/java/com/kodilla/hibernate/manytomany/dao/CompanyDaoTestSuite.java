@@ -143,7 +143,7 @@ public class CompanyDaoTestSuite {
         int greyMatterId = greyMatter.getId();
 
         //when
-        List<Company> companiesWithLetters = companyDao.retrieveCompaniesWithLetters("sof");
+        List<Company> companiesWithLetters = companyDao.retrieveCompaniesWithLetters("gre");
 
         //then
         Assert.assertEquals(1, companiesWithLetters.size());
