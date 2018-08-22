@@ -7,10 +7,8 @@ import java.util.List;
 @NamedNativeQueries({
         @NamedNativeQuery(
                 name = "Company.retrieveCompaniesWithLetters",
-                /*query = "SELECT * FROM COMPANIES" +
-                        " WHERE LEFT(COMPANY_NAME, 3) = :COMPANY",*/
                 query = "SELECT * FROM COMPANIES" +
-                        " WHERE COMPANY_NAME LIKE CONCAT (:COMPANY, '%')",
+                        " WHERE LEFT(COMPANY_NAME, 3) = :COMPANY",
                 resultClass = Company.class
         ),
         @NamedNativeQuery(
