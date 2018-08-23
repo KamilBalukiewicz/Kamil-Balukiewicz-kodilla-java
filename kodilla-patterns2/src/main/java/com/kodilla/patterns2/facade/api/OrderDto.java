@@ -1,5 +1,7 @@
 package com.kodilla.patterns2.facade.api;
 
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
